@@ -53,6 +53,29 @@ footer .ltgray ul li:hover {
     color: #6c83e6;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 30px;
+    width: 30px;
+    outline: black;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 16px;
+    color: #252526;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 16px;
+    color: #252526;
+}
+
+
 .uncheck {
     color: #dfe0e6;
 }
@@ -208,13 +231,31 @@ footer .ltgray ul li a {
         font-size: 2rem;
     }
 
+    .link-category {
+        display: flex;
+    }
+
 }
 
 
 @media screen and (max-width:576px) {
+    html {
+        font-size: 14px;
+    }
+
     .social a {
         font-size: 1.5rem;
         margin: .5rem;
+    }
+
+    .fa-quote-left:before,
+    .fa-quote-right:before {
+        content: none;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none;
     }
 
 }
